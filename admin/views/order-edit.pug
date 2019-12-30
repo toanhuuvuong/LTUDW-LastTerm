@@ -1,0 +1,137 @@
+extends layout
+
+block header
+  .breadcome-area
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .breadcome-list
+            .row
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-wp
+                  .breadcomb-icon
+                    i.icon.nalika-home
+                  .breadcomb-ctn
+                    h2 Thêm/Sửa/Xem đơn hàng
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-report
+                  button.btn(data-toggle='tooltip', data-placement='left', title='Tải báo cáo')
+                    i.icon.nalika-download
+block content
+  // Single pro tab start
+  .single-product-tab-area.mg-b-30
+    // Single pro tab review Start
+    .single-pro-review-area
+      .container-fluid
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .review-tab-pro-inner
+              .product-status-wrap
+                ul#myTab3.tab-review-design
+                  li.active
+                    a(href='#description')
+                      i.icon.nalika-edit(aria-hidden='true')
+                      |  Thông tin đơn hàng
+                #myTabContent.tab-content.custom-product-edit
+                  #description.product-tab-list.tab-pane.fade.active.in
+                    .row
+                      .input-group.mg-b-pro-edt
+                        span.input-group-addon
+                          i.icon.nalika-edit(aria-hidden='true')
+                        input.form-control(type='text', placeholder='Mã đơn hàng')
+                      .input-group.mg-b-pro-edt
+                        span.input-group-addon
+                          i.icon.nalika-edit(aria-hidden='true')
+                        input.form-control(type='text', placeholder='Tên khách hàng')
+                      .input-group.mg-b-pro-edt
+                        span.input-group-addon
+                          i.icon.nalika-edit(aria-hidden='true')
+                        input.form-control(type='text', placeholder='Số điện thoại')
+                      .input-group.mg-b-pro-edt
+                        span.input-group-addon
+                          i.icon.nalika-edit(aria-hidden='true')
+                        input.form-control(type='text', placeholder='Địa chỉ giao hàng')
+                      .input-group.mg-b-pro-edt
+                        span.input-group-addon
+                          i.icon.nalika-edit(aria-hidden='true')
+                        input.form-control(type='text', placeholder='Hình thức thanh toán')
+                      select.form-control.mg-b-pro-edt
+                        option Tình trạng đơn hàng
+                        option(value='1') Đã giao
+                        option(value='2') Chưa giao
+                        option(value='3') Đang giao
+                      .row
+                        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                          ul#myTab3.tab-review-design
+                            li.active
+                              a(href='#description')
+                                i.icon.nalika-edit(aria-hidden='true')
+                                |  Danh sách vật phẩm đã đặt
+                        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                          .add-product
+                            a(href='order-item-edit.html') Thêm vật phẩm
+                      table
+                        tr
+                          th STT
+                          th Ảnh
+                          th Tên sản phẩm
+                          th Số lượng
+                          th Tuỳ chọn
+                        tr
+                          td 1
+                          td
+                            img(src='img/new-product/5-small.jpg', alt='')
+                          td Sản phẩm 1
+                          td 1
+                          td
+                            button.pd-setting-ed(data-toggle='tooltip', title='Sửa')
+                              a(href='order-item-edit.html')
+                                i.fa.fa-pencil-square-o(aria-hidden='true')
+                            button.pd-setting-ed(data-toggle='tooltip', title='Xoá')
+                              a(href='#') 
+                                i.fa.fa-trash-o(aria-hidden='true')
+                        tr
+                          td 2
+                          td
+                            img(src='img/new-product/5-small.jpg', alt='')
+                          td Sản phẩm 2
+                          td 2
+                          td
+                            button.pd-setting-ed(data-toggle='tooltip', title='Sửa')
+                              a(href='order-item-edit.html')
+                                i.fa.fa-pencil-square-o(aria-hidden='true')
+                            button.pd-setting-ed(data-toggle='tooltip', title='Xoá')
+                              a(href='#') 
+                                i.fa.fa-trash-o(aria-hidden='true')
+                        tr
+                          td 3
+                          td
+                            img(src='img/new-product/5-small.jpg', alt='')
+                          td Sản phẩm 3
+                          td 1
+                          td
+                            button.pd-setting-ed(data-toggle='tooltip', title='Sửa')
+                              a(href='order-item-edit.html')
+                                i.fa.fa-pencil-square-o(aria-hidden='true')
+                            button.pd-setting-ed(data-toggle='tooltip', title='Xoá')
+                              a(href='#') 
+                                i.fa.fa-trash-o(aria-hidden='true')
+                    .custom-pagination
+                      ul.pagination
+                        li.page-item
+                          a.page-link(href='#') Trước
+                        li.page-item
+                          a.page-link(href='#') 1
+                        li.page-item
+                          a.page-link(href='#') 2
+                        li.page-item
+                          a.page-link(href='#') 3
+                        li.page-item
+                          a.page-link(href='#') Sau
+                    .row
+                      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        .text-center.custom-pro-edt-ds
+                          button.btn.btn-ctl-bt.waves-effect.waves-light.m-r-10(type='button')
+                            | Lưu
+                          button.btn.btn-ctl-bt.waves-effect.waves-light(type='button')
+                            | Bỏ qua

@@ -1,0 +1,40 @@
+extends layout
+
+block header
+  .breadcome-area
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .breadcome-list
+            .row
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-wp
+                  .breadcomb-icon
+                    i.icon.nalika-home
+                  .breadcomb-ctn
+                    h2 Top 10 sản phẩm
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-report
+                  button.btn(data-toggle='tooltip', data-placement='left', title='Tải báo cáo')
+                    i.icon.nalika-download
+block content
+  .product-status.mg-b-30
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .product-status-wrap
+            h4 Danh sách gian hàng
+            .add-product
+              a(href='top-10-product-of-shop.html') Top 10 sản phẩm của shop
+            .row
+              .review-content-section
+                .input-group.mg-b-pro-edt
+                  span.input-group-addon
+                    i.icon.nalika-edit(aria-hidden='true')
+                  input.form-control(type='text', placeholder='Tên gian hàng')
+            .row
+              .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .text-center.custom-pro-edt-ds
+                  a(href='top-10-product-of-stall.html')
+                    button.btn.btn-ctl-bt.waves-effect.waves-light.m-r-10(type='button')
+                      | Top 10 sản phẩm của gian hàng

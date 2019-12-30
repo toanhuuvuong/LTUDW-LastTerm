@@ -1,0 +1,71 @@
+extends layout
+
+block header
+  .breadcome-area
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .breadcome-list
+            .row
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-wp
+                  .breadcomb-icon
+                    i.icon.nalika-home
+                  .breadcomb-ctn
+                    h2 Thêm/Sửa tài khoản
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-report
+                  button.btn(data-toggle='tooltip', data-placement='left', title='Tải báo cáo')
+                    i.icon.nalika-download
+block content
+  // Single pro tab start
+  .single-product-tab-area.mg-b-30
+    // Single pro tab review Start
+    .single-pro-review-area
+      .container-fluid
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .review-tab-pro-inner
+              ul#myTab3.tab-review-design
+                li.active
+                  a(href='#description')
+                    i.icon.nalika-edit(aria-hidden='true')
+                    |  Thông tin tài khoản
+              #myTabContent.tab-content.custom-product-edit
+                #description.product-tab-list.tab-pane.fade.active.in
+                  .row
+                    .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                      .review-content-section
+                        .input-group.mg-b-pro-edt
+                          span.input-group-addon
+                            i.icon.nalika-edit(aria-hidden='true')
+                          input.form-control(type='text', placeholder='Họ tên')
+                        .input-group.mg-b-pro-edt
+                          span.input-group-addon
+                            i.icon.nalika-edit(aria-hidden='true')
+                          input.form-control(type='text', placeholder='Số điện thoại')
+                        select.form-control.mg-b-pro-edt
+                          option Giới tính
+                          option(value='1') Nam
+                          option(value='2') Nữ
+                    .col-lg-6.col-md-6.col-sm-6.col-xs-12
+                      .review-content-section
+                        .input-group.mg-b-pro-edt
+                          span.input-group-addon
+                            i.icon.nalika-edit(aria-hidden='true')
+                          input.form-control(type='text', placeholder='Ngày sinh (DD/MM/YYYY)')
+                        .input-group.mg-b-pro-edt
+                          span.input-group-addon
+                            i.icon.nalika-edit(aria-hidden='true')
+                          input.form-control(type='text', placeholder='Email')
+                        .input-group.mg-b-pro-edt
+                          span.input-group-addon
+                            i.icon.nalika-edit(aria-hidden='true')
+                          input.form-control(type='text', placeholder='Mật khẩu')
+                  .row
+                    .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                      .text-center.custom-pro-edt-ds
+                        button.btn.btn-ctl-bt.waves-effect.waves-light.m-r-10(type='button')
+                          | Lưu
+                        button.btn.btn-ctl-bt.waves-effect.waves-light(type='button')
+                          | Bỏ qua

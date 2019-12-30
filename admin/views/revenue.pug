@@ -1,0 +1,41 @@
+extends layout
+
+block header
+  .breadcome-area
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .breadcome-list
+            .row
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-wp
+                  .breadcomb-icon
+                    i.icon.nalika-home
+                  .breadcomb-ctn
+                    h2 Doanh thu
+              .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                .breadcomb-report
+                  button.btn(data-toggle='tooltip', data-placement='left', title='Tải báo cáo')
+                    i.icon.nalika-download
+block content
+  .product-status.mg-b-30
+    .container-fluid
+      .row
+        .col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .product-status-wrap
+            h4 Doanh thu
+            .row
+              .review-content-section
+                select.form-control.mg-b-pro-edt
+                  option Tiêu chí thống kê
+                  option(value='1') Hôm nay
+                  option(value='2') Tuần
+                  option(value='3') Tháng
+                  option(value='4') Quý
+                  option(value='5') Năm
+            .row
+              .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .text-center.custom-pro-edt-ds
+                  a(href='revenue-statistics.html')
+                    button.btn.btn-ctl-bt.waves-effect.waves-light.m-r-10(type='button')
+                      | Thống kê
